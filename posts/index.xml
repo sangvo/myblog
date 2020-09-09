@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - My bloger</title>
+        <link>sangvo.github.io/posts/</link>
+        <description>All Posts | My bloger</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jun 2020 21:42:21 &#43;0700</lastBuildDate><atom:link href="sangvo.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>First_post</title>
+    <link>sangvo.github.io/posts/first_post/</link>
+    <pubDate>Fri, 19 Jun 2020 21:42:21 &#43;0700</pubDate>
+    <author>SangVo</author>
+    <guid>sangvo.github.io/posts/first_post/</guid>
+    <description><![CDATA[This first post Hello i sangvo developer. Hulo]]></description>
+</item></channel>
+</rss>
