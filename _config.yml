@@ -1,5 +1,5 @@
 # Site settings
-title: Sang Vo
+title: Sang Vo Blog
 email: sangvo111@example.com
 name: Sang Vo
 position: Ruby on Rails Developer
@@ -14,6 +14,9 @@ github_username:  sangvo
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-toc
+  - jekyll-seo-tag
+
 include:
   - _pages
 
@@ -34,6 +37,16 @@ navigation:
   - name: About me
     link: /about
 
+toc:
+  min_level: 1
+  max_level: 2
+  ordered_list: true
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
