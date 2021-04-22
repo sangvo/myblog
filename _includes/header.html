@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="header__inner">
+    <div class="header__me">
+      <a href="{{site.url | relative_url}}" class="header__me__avatar">
+        <img
+        src="{{ "/assets/images/vo-van-sang-v2.jpeg" | relative_url }}"
+        width="64"
+        height="64"
+        alt="{{ site.title }}"
+        srcset="{{ "/assets/images/vo-van-sang-v2.jpeg" | relative_url }} 2x"
+        decoding="async">
+      </a>
+      <div>
+        <a href="/" class="header__me__name">{{ site.name }}</a>
+        <div class="header__me__title">{{ site.position }}</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul>
+        {% for item in site.navigation %}
+        <li>
+          <a href="{{ item.link }}" title="{{ item.name }}"><span>{{ item.name }}</span></a>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

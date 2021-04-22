@@ -1,0 +1,55 @@
+# Site settings
+title: Sang Vo
+email: sangvo111@example.com
+name: Sang Vo
+position: Ruby on Rails Developer
+description: >-
+  Hi, I'm Sang. I based in Da Nang,  currently work as a Backed End Engineer at Sun*.
+baseurl: ""
+url: ""
+twitter_username: sangvo111
+github_username:  sangvo
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+include:
+  - _pages
+
+# Permalinks
+permalink: /posts/:title:output_ext
+paginate: 5
+
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed
+
+navigation:
+  - name: Home
+    link: /
+  - name: Articles
+    link: /articles
+  - name: About me
+    link: /about
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
