@@ -3,10 +3,9 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2021-04-22 10:46:59 +0700
 categories: jekyll update
-toc: true
 ---
 
-## Improvements and fixes
+## Improvements and fixes Improvements and fixes Improvements and fixes
 ### Nextcloud
 ## Installed
 ## Mail server

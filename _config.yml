@@ -13,8 +13,6 @@ github_username:  sangvo
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-toc
   - jekyll-seo-tag
 
 include:
