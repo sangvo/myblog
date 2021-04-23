@@ -13,4 +13,16 @@ layout: default
     {% include toc.html html=content h_max=3 id="markdown-toc" %}
     {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true h_max=2 %}
   </section>
+  <div class="post-nav">
+    <div>
+      {% if page.previous.url %}
+      <a href="{{page.previous.url}}">⇠&nbsp;{{page.previous.title}}</a>
+      {% endif %}
+    </div>
+    <div class="post-nav-next">
+      {% if page.next.url %}
+      <a href="{{page.next.url}}">{{page.next.title}}&nbsp;⇢</a>
+      {% endif %}
+    </div>
+  </div>
 </article>

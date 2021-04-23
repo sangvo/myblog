@@ -5,7 +5,7 @@ date: 2021-04-23 15:44 +0700
 description:
 image:
 category: rails
-tags: rails, github actions
+tags: rails,github actions
 published: true
 sitemap: true
 ---
@@ -97,14 +97,13 @@ jobs:
 Còn rất nhiều actions khác ví dụ như setup ruby thì có `actions/setup-ruby`, hay để cache file chúng ta dùng
 `actions/cache`...
 
+{% raw %}
+
 ```yaml
     steps:
     - uses: actions/checkout@v1
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6.3
-        bundler-cache: true
 
     - uses: actions/cache@v1
       with:
@@ -141,17 +140,8 @@ Còn rất nhiều actions khác ví dụ như setup ruby thì có `actions/setu
         sudo /etc/init.d/mysql start
         bundle exec rails db:create
         bundle exec rails db:schema:load
+```
+{% endraw %}
 
-    - name: Run Rubocop
-      run: bundle exec rubocop
-
-    - name: Run Brakeman
-      run: bundle exec brakeman
-
-    - name: Run Rspec
-      run: |
-        sudo /etc/init.d/mysql start
-        bundle exec rspec
-````
 
 PR: [https://github.com/sangvo/github-action-ruby](https://github.com/sangvo/github-action-ruby)

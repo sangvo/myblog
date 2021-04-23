@@ -21,6 +21,7 @@ include:
 # Permalinks
 permalink: /posts/:title:output_ext
 paginate: 5
+paginate_path: /page:num/
 
 # Assets
 sass:

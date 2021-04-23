@@ -1,6 +1,7 @@
 @import 'syntax';
 @import 'tile';
 @import 'toc';
+@import 'pagination';
 
 @font-face {
 	font-family: "JetBrains Mono";
@@ -34,6 +35,20 @@ pre {
 	padding: 3px 5px;
 	white-space: no-wrap;
 	-webkit-font-smoothing: auto;
+    overflow: auto;
+}
+
+.post-nav {
+    font-size: 14px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+}
+.post-nav div {
+    flex: 1 1 0;
+}
+.post-nav-next {
+    text-align: right;
 }
 
 .button-external {
