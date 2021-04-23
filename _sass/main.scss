@@ -58,8 +58,33 @@ pre {
     padding: 0.5rem;
     margin: 1rem 0;
     border: 1px solid #eee;
-    border-radius: 3px;
+}
+
+.site-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .wrapper-footer {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
+  }
+  a {
+      color: #66BB6A;
+      transition: color .1s ease;
+      &:active {
+          color: #a0a1a7;
+          text-decoration: none;
+      }
+      &:focus {
+          color: #a0a1a7;
+          text-decoration: none;
+      }
+      &:hover {
+          color: #a0a1a7;
+          text-decoration: none;
+      }
+  }
 }
 
 .highlight .lineno {
