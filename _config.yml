@@ -42,6 +42,9 @@ analytics:
   google: G-ER0CVYRKLM
   facebook: 1412113735801560
 
+# Disqus Comments
+disqus:
+  shortname: sangv2
 # Build settings
 plugins:
   - jekyll-feed
