@@ -5,7 +5,7 @@ date: 2021-04-23 15:44 +0700
 description:
 image:
 category: rails
-tags: rails,github actions
+tags: rails ci
 published: true
 sitemap: true
 ---
@@ -144,4 +144,4 @@ Còn rất nhiều actions khác ví dụ như setup ruby thì có `actions/setu
 {% endraw %}
 
 
-PR: [https://github.com/sangvo/github-action-ruby](https://github.com/sangvo/github-action-ruby)
+Source code: [https://github.com/sangvo/github-action-ruby](https://github.com/sangvo/github-action-ruby)

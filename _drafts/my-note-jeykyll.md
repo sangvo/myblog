@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My note jeykyll
+title: My note jeykyll rocket
 description:
 image:
 category:
@@ -8,5 +8,5 @@ tags:
 ---
 
 ```ruby
-puts "Hello jeykyll"
+puts "Hello jekyll"
 ```

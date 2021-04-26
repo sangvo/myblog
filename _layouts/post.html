@@ -5,13 +5,29 @@ layout: default
 <article class="post content">
   <header class="post__head">
     <h1>{{ page.title }}</h1>
+
     {% if page.date %}
-      <time class="gray-on-white" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      Published at: <time class="gray-on-white" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+      <div class="post-tags post-card__tags">
+        {%- for tag in page.tags -%}
+          <a href="/tag/{{ tag }}/" class="post-tags__link"><span>#</span>{{ tag }} </a>
+        {%- endfor -%}
+      </div>
     {% endif %}
   </header>
   <section class="post__body">
     {% include toc.html html=content h_max=3 id="markdown-toc" %}
     {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true h_max=2 %}
+    <p class="gray-on-white" style="text-align: right">
+      Written by:
+      {% if page.author %}
+        {{ page.author }}
+      {% else %}
+        {{ site.author.name }}
+      {% endif %}
+    </p>
   </section>
   <div class="post-nav">
     <div>

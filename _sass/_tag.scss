@@ -1,0 +1,21 @@
+.post-tags {
+    margin: 1em 0 0;
+}
+
+.post-tags__link {
+    margin-right: .7em;
+    font-size: .8em;
+    color: currentColor;
+    text-decoration: none;
+    background-color: #f3f7f9;
+    color: currentColor!important;
+    padding: .5em;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: .7em;
+}
+
+a:not(.button):hover {
+    opacity: .8;
+}

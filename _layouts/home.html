@@ -14,10 +14,16 @@ layout: default
     <p>
       {{ post.content | strip_html | truncatewords: 30 }}
     </p>
+    {% if post.tags.size > 0 %}
+      <div class="post-tags post-card__tags">
+        {%- for tag in post.tags -%}
+          <a href="/tag/{{ tag }}/" class="post-tags__link"><span>#</span>{{ tag }} </a>
+        {%- endfor -%}
+      </div>
+    {% endif %}
     </article>
     <hr>
   {% endfor %}
-
   <!-- pagination -->
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
@@ -29,7 +35,7 @@ layout: default
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
+        <span class="pagination-page">{{ page }}</span>
       {% elsif page == 1 %}
         <a href="/">{{ page }}</a>
       {% else %}

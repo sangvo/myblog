@@ -5,7 +5,7 @@ date: 2021-04-23 17:28 +0700
 description:
 image:
 category:
-tags:
+tags: rails
 published: true
 sitemap: true
 ---
