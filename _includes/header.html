@@ -2,8 +2,7 @@
   <div class="header__inner">
     <div class="header__me">
       <a href="{{site.url | relative_url}}" class="header__me__avatar">
-        <img
-        src="{{ "/assets/images/vo-van-sang-v2.jpeg" | relative_url }}"
+        <img src="{{ "/assets/images/vo-van-sang-v2.jpeg" | relative_url }}"
         width="64"
         height="64"
         alt="{{ site.title }}"
@@ -11,8 +10,8 @@
         decoding="async">
       </a>
       <div>
-        <a href="/" class="header__me__name">{{ site.name }}</a>
-        <div class="header__me__title">{{ site.position }}</div>
+        <a href="/" class="header__me__name">{{ site.author.name }}</a>
+        <div class="header__me__title">{{ site.author.position }}</div>
       </div>
     </div>
     <nav class="nav">

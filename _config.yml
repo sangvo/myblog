@@ -1,14 +1,46 @@
 # Site settings
-title: Sang Vo Blog
-email: sangvo111@gmail.com
-name: Sang Vo
+title: blog.sangv2.com
 position: Ruby on Rails Developer
 description: >-
-  Hi, I'm Sang. I based in Da Nang,  currently work as a Backed End Engineer at Sun*.
+  Nơi chia sẻ các bài viết về kĩ thuật, kinh nghiệm làm việc của bản thân.
 baseurl: ""
 url: ""
-twitter_username: sangvo111
-github_username:  sangvo
+
+# Author settings
+author:
+  name: Sang Vo
+  url: https://blog.sangv2.com
+  email: sangvo111@gmail.com
+  position: Ruby on Rails Developer
+  description: >-
+    Hi, I'm Sang. I'm based in Da Nang, currently work as a Backend Engineer at Sun*.
+  twitter_username: sangvo111
+  github_username: sangvo
+
+twitter:
+  username: sangvo111
+  card: summary
+
+facebook:
+  app_id: 1412113735801560
+  publisher: 100449835536619
+  admins: 100002802203533
+
+webmaster_verifications:
+  google: zx2er-J62dJfcGMeg8RwzHVUBLPIPwhWjFJapG83UWU
+  bing: F47DE4DEDF75E8647C9F7D9C105AC830
+
+social:
+  name: Sang Vo
+  links:
+    - https://twitter.com/sangvo111
+    - https://www.facebook.com/sangvo.dev
+    - https://www.linkedin.com/in/sangvo97
+    - https://github.com/sangvo
+
+analytics:
+  google: G-ER0CVYRKLM
+  facebook: 1412113735801560
 
 # Build settings
 plugins:
