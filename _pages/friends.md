@@ -2,6 +2,7 @@
 layout: post
 title: "Friends"
 permalink: /friends/
+comments: true
 ---
 
 ## Nghề BrSE - Tâm sự nghề BrSE

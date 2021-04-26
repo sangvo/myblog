@@ -70,11 +70,11 @@ navigation:
   - name: Home
     link: /
   - name: Articles
-    link: /articles
+    link: /articles/
   - name: About me
-    link: /about
+    link: /about/
   - name: Friends
-    link: /friends
+    link: /friends/
 
 jekyll_compose:
   default_front_matter:
@@ -90,6 +90,7 @@ jekyll_compose:
       tags:
       published: false
       sitemap: false
+      Comments: true
 
 markdown: kramdown
 highlighter: rouge

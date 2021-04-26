@@ -8,6 +8,7 @@ category:
 tags: rails
 published: true
 sitemap: true
+comments: true
 ---
 
 Trong quá trình phát triển chúng ta thường tạo dữ liệu "rác" ví dụ như khi xóa bảng `Class` mà chúng ta không thêm

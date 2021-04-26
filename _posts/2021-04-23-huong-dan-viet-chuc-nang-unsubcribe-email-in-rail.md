@@ -8,6 +8,7 @@ category:
 tags: rails tips
 published: true
 sitemap: true
+comments: true
 ---
 
 ## Mở đầu

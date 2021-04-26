@@ -17,8 +17,10 @@
     <nav class="nav">
       <ul>
         {% for item in site.navigation %}
-        <li>
-          <a href="{{ item.link }}" title="{{ item.name }}"><span>{{ item.name }}</span></a>
+        <li {% if page.url == item.link %}class='nav__item--active'{% endif %}>
+          <a href="{{ item.link }}" title="{{ item.name }}">
+            <span>{{ item.name }}</span>
+          </a>
         </li>
       {% endfor %}
       </ul>
