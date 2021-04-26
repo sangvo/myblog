@@ -10,6 +10,5 @@ Website: [https://brsenote.com/](https://brsenote.com/)
 ## Chinh Pham's Blog
 Website: [https://chinhpham.net/](https://chinhpham.net/)
 
-## LuatHN
+## Luat Hoang
 Website: [https://luathn.com/](https://luathn.com/)
-
