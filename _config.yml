@@ -46,6 +46,7 @@ analytics:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 include:
   - _pages
