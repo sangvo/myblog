@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<article class="post content">
+<article class="post content" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post__head">
-    <h1>{{ page.title }}</h1>
+    <h1 itemprop="name headline">{{ page.title }}</h1>
 
     {% if page.date %}
-      Published at: <time class="gray-on-white" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      Published at:
+      <time class="gray-on-white" datetime="{{ page.date }}" itemprop="datePublished">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
     {% endif %}
     {% if page.tags.size > 0 %}
       <div class="post-tags post-card__tags">
@@ -17,7 +20,7 @@ layout: default
       </div>
     {% endif %}
   </header>
-  <section class="post__body">
+  <section class="post__body" itemprop="articleBody">
     {% include toc.html html=content h_max=3 id="markdown-toc" %}
     {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true h_max=2 %}
     {% if page.author %}
