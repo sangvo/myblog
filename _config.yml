@@ -70,6 +70,8 @@ navigation:
     link: /articles
   - name: About me
     link: /about
+  - name: Friends
+    link: /friends
 
 jekyll_compose:
   default_front_matter:
