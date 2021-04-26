@@ -20,14 +20,11 @@ layout: default
   <section class="post__body">
     {% include toc.html html=content h_max=3 id="markdown-toc" %}
     {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true h_max=2 %}
+    {% if page.author %}
     <p class="gray-on-white" style="text-align: right">
-      Written by:
-      {% if page.author %}
-        {{ page.author }}
-      {% else %}
-        {{ site.author.name }}
-      {% endif %}
+        Written by: {{ page.author }}
     </p>
+    {% endif %}
   </section>
   <div class="post-nav">
     <div>
