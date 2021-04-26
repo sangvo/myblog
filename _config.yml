@@ -51,6 +51,7 @@ plugins:
 
 include:
   - _pages
+  - tag
 
 # Permalinks
 permalink: /posts/:title:output_ext
