@@ -2,8 +2,8 @@
 layout: post
 title: Tích hợp CircleCI với github cho ứng dụng Ruby on Rails
 date: 2021-04-27 22:05 +0700
-description:
-image:
+description: Hướng dẫn tích hợp circleCI để chạy Unit Test và cá linter cho dự án Ruby on Rails
+image: /assets/images/rails-circle-ci-sangv2.jpg
 category:
 tags: rails circle-ci ci
 published: true
@@ -14,14 +14,17 @@ toc: true
 
 ## CI là gì?
 
-CI là viết tắt của Continuous Integration dịch ra là "Tích hợp liên tục" là phương pháp mà các team Agile sử dụng để đảm bảo code của toàn dự án
-luôn build được, luôn chạy đúng (Pass toàn bộ các test case).
+CI là viết tắt của Continuous Integration dịch ra là "Tích hợp liên tục" là phương pháp mà các team Agile sử dụng để đảm bảo code của toàn dự án luôn build được, luôn chạy đúng (Pass toàn bộ các test case).
 
 Ở đây có bài giải thích về CI rất đơn giản và dễ hiểu: [bài giải thích gần gũi của anh code dạo](https://toidicodedao.com/2015/08/27/giai-thich-don-gian-ve-ci-continuous-integration-tich-hop-lien-tuc/), hoặc [bài viết tiếng anh](https://www.thoughtworks.com/continuous-integration)
 
- ## CirceCI là gì? - Nó là 1 tool giúp chúng ta thực hiện hóa quá trình tích hợp trên, CI có rất nhiều tool khác cũng nổi tiếng như (Travis CI, Jenkins...)
+### CirceCI là gì?
+
+- Nó là 1 tool giúp chúng ta thực hiện hóa quá trình tích hợp trên, CI có rất nhiều tool khác cũng nổi tiếng như (Travis CI, Jenkins...)
 
   Bản chất của CircleCI là sử dụng docker, trong file cấu hình của CircleCI tachỉ định các docker `image` và sử dụng các `job`, trong các `job` thì lại có các `step`, trong step thì lại có các command.
+
+{% include image.html name="rails-circle-ci-sangv2.jpg" alt="Circle CI and Ruby on Rails" %}
 
 ## Quá trình run 1 job trên CircleCI
 
