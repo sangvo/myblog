@@ -21,7 +21,9 @@ layout: default
     {% endif %}
   </header>
   <section class="post__body" itemprop="articleBody">
-    {% include toc.html html=content h_max=3 id="markdown-toc" %}
+    {% if page.toc %}
+      {% include toc.html html=content h_max=3 id="markdown-toc" %}
+    {% endif %}
     {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true h_max=2 %}
     {% if page.author %}
     <p class="gray-on-white" style="text-align: right">

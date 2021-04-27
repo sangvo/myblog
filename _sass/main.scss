@@ -262,6 +262,20 @@ h2 {
 	a {
 		text-decoration: none;
 	}
+    .note {
+      padding: 7.5px 10px;
+      border: 2px dashed #6aaf50;
+      margin: 22.5px 5px;
+      border-radius: 5px;
+      overflow: auto;
+
+      &::before {
+        content: "Note:";
+        display: block;
+        margin-bottom: 3.75px;
+        font-weight: 500;
+      }
+    }
 }
 .mt-32 {
 	margin-top: 32px;
@@ -329,6 +343,41 @@ hr {
 	border-top: 1px solid #ddd;
 	height: 0;
 	margin: 32px 0;
+}
+blockquote{
+  margin:50px auto;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 10px 1.2em 55px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  border-radius: 5px;
+}
+
+blockquote::before{
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+.emoji {
+  display: inline-block;
 }
 @media (max-width:767px) {
 	.header__inner {

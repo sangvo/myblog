@@ -9,6 +9,7 @@ tags: rails ci
 published: true
 sitemap: true
 comments: true
+toc: true
 ---
 
 Các dịch vụ CI/CD ngày càng phổ biến nhứ CircleCI, TravisCI... Github cũng đã cung cấp chúng ta 1 CI cây nhà lá vườn

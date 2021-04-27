@@ -91,6 +91,7 @@ jekyll_compose:
       published: false
       sitemap: false
       Comments: true
+      toc: true
 
 markdown: kramdown
 highlighter: rouge

@@ -9,6 +9,7 @@ tags: rails tips
 published: true
 sitemap: true
 comments: true
+toc: true
 ---
 
 ## Mở đầu
