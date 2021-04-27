@@ -90,7 +90,7 @@ jekyll_compose:
       tags:
       published: false
       sitemap: false
-      Comments: true
+      comments: true
       toc: true
 
 markdown: kramdown

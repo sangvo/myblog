@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tích hợp CircleCI với github cho ứng dụng ROR
+title: Tích hợp CircleCI với github cho ứng dụng Ruby on Rails
 date: 2021-04-27 22:05 +0700
 description:
 image:
@@ -8,7 +8,7 @@ category:
 tags: rails circle-ci ci
 published: true
 sitemap: true
-Comments: true
+comments: true
 toc: true
 ---
 
