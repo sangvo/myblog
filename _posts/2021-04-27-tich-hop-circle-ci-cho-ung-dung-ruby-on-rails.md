@@ -10,6 +10,7 @@ published: true
 sitemap: true
 comments: true
 toc: true
+series: "Ruby on rails and CI/CD"
 ---
 
 ## CI là gì?

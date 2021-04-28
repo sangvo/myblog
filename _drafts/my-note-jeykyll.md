@@ -6,6 +6,7 @@ image:
 category:
 tags:
 toc: true
+series: "Intro to series"
 ---
 
 ```ruby

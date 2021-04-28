@@ -7,7 +7,6 @@ layout: default
     <h1 itemprop="name headline">{{ page.title }}</h1>
 
     {% if page.date %}
-      Published at:
       <time class="gray-on-white" datetime="{{ page.date }}" itemprop="datePublished">
         {{ page.date | date: "%B %d, %Y" }}
       </time>
@@ -21,6 +20,9 @@ layout: default
     {% endif %}
   </header>
   <section class="post__body" itemprop="articleBody">
+    {% if page.series %}
+      {% include series.html %}
+    {% endif %}
     {% if page.toc %}
       {% include toc.html html=content h_max=3 id="markdown-toc" %}
     {% endif %}
@@ -31,6 +33,7 @@ layout: default
     </p>
     {% endif %}
   </section>
+
   <div class="post-nav">
     <div>
       {% if page.previous.url %}
