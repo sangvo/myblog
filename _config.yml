@@ -51,6 +51,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
+  - inline_highlight
 
 include:
   - _pages

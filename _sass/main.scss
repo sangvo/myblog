@@ -28,6 +28,15 @@ html {
 	background: #fafbfc;
 }
 
+a[target=_blank] {
+  &:after {
+      content: url(/assets/images/hyperlink.svg);
+      margin-left: 5px;
+      position: relative;
+      top: -2px;
+  }
+}
+
 pre {
     background: #fdf6e3;
 	border-radius: 3px;
@@ -388,9 +397,11 @@ blockquote span{
   font-weight: bold;
   margin-top:1em;
 }
+
 .emoji {
   display: inline-block;
 }
+
 @media (max-width:767px) {
 	.header__inner {
 		flex-direction: column;
