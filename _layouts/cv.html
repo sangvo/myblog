@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CV - {{site.data.cv.personal_info.name}} - {{site.data.cv.personal_info.profession}}</title>
+    {% include cv_head.html %}
+  </head>
+  <body>
+    {% include cv_header.html %}
+    <main class="container">
+      <div class="col-sm-12 col-md-12 half-page" id="first-half-page">
+        {% if site.data.cv.experiences.size > 0 %}
+        <div class="block">
+          {% include cv_section_header.html title="Work Experience" %}
+          {% include cv_experience.html experiences= site.data.cv.experiences %}
+        </div>
+        {% endif %}
+        {% if site.data.cv.skills.size > 0 %}
+        <div class="block">
+          {% include cv_section_header.html title="Technical skills" %}
+          {% include cv_skill.html skills= site.data.cv.skills %}
+        </div>
+        {% endif %}
+        {% if site.data.cv.activities.size > 0 %}
+        <div class="block">
+          {% include cv_section_header.html title="My activities" %}
+          {% include cv_activity.html activities= site.data.cv.activities %}
+        </div>
+        {% endif %}
+      </div>
+    </main>
+    {% include cv_script.html %}
+    {% include analytics.html %}
+  </body>
+</html>

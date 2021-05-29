@@ -1,0 +1,66 @@
+<header class="container">
+  <div class="flex-row flex-space-between flex-align-center">
+    {% if site.data.cv.personal_info.photo %}
+    <div class="info-pic">
+      <img src="{{site.data.cv.personal_info.photo}}" alt="Photo of {{site.data.cv.personal_info.name}}"
+           class="pic bordered-pic"/>
+    </div>
+    {% endif %}
+
+    <div class="flex-column info-left">
+      <h1 class="name">{{site.data.cv.personal_info.name | trim}}</h1>
+      <h2 class="profession">{{site.data.cv.personal_info.profession | trim}}</h2>
+      {% if site.data.cv.personal_info.summary %}
+        <p>{{site.data.cv.personal_info.summary | trim}}</p>
+      {% endif %}
+    </div>
+
+    <div class="flex-column flex-nowrap info-right">
+      {% if site.data.cv.personal_info.mail %}
+      <div>
+        <a href="mailto:{{site.data.cv.personal_info.mail}}">{{site.data.cv.personal_info.mail | trim}}</a>
+        <i class="fa fa-envelope"></i>
+      </div>
+      {% endif %}
+      {% if site.data.cv.personal_info.phone %}
+      <div>
+        <a href="tel:{{site.data.cv.personal_info.phone}}">{{site.data.cv.personal_info.phone | trim}}</a>
+        <i class="fa fa-phone"></i>
+      </div>
+      {% endif %}
+
+      {% if site.data.cv.personal_info.address %}
+      <div>
+        <a href="{{site.data.cv.personal_info.address.url}}" target="_blank">{{site.data.cv.personal_info.address.title | trim}}</a>
+        <i class="fa fa-map-marker" style="margin-left: 2.5px; margin-right: 2.5px;"></i>
+      </div>
+      {% endif %}
+
+      {% if site.data.cv.personal_info.personal_site %}
+      <div>
+        <a href="{{site.data.cv.personal_info.personal_site.url | trim}}" target="_blank">
+          {{site.data.cv.personal_info.personal_site.title | trim}}
+        </a>
+        <i class="fa fa-globe"></i>
+      </div>
+      {% endif %}
+
+      {% if site.data.cv.personal_info.github %}
+      <div>
+        <a href="{{site.data.cv.personal_info.github.url | trim}}" target="_blank">
+          {{site.data.cv.personal_info.github.title | trim}}
+        </a>
+        <i class="fa fa-github"></i>
+      </div>
+      {% endif %}
+
+      {% if site.data.cv.personal_info.linkedin %}
+      <div>
+        <a href="{{site.data.cv.personal_info.linkedin.url | trim}}" target="_blank">{{site.data.cv.personal_info.linkedin.title | trim}}</a>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</header>
+

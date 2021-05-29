@@ -1,0 +1,49 @@
+{% for experience in include.experiences %}
+<section class="experience">
+  <div class="section-inner-header flex-row flex-nowrap flex-space-between">
+    <div class="padding-right-10">
+      <h1>{{experience.role | trim}} {% if experience.company %} at {{experience.company | trim}} {% endif %} </h1>
+        {% if experience.organization %}
+        <h2>{{experience.organization | trim}}</h2>
+        {% endif %}
+    </div>
+    <div class="experience-dateloc">
+      {% if experience.date %}
+      <h6 class="date">{{experience.date | trim}}</h6>
+      {% endif %}
+      {% if experience.location %}
+      <h6 class="location">{{experience.location | trim}}</h6>
+      {% endif %}
+    </div>
+  </div>
+  {% if experience.description %}
+  <p class="description">{{experience.description | trim}}</p>
+  {% endif %}
+
+  <ul class="bullets">
+    {% for bullet in experience.description_bullets %}
+    <li><span>{{bullet | trim}}</span></li>
+    {% endfor %}
+  </ul>
+
+  {% for project in experience.projects %}
+  <p>
+  <strong>* {{project.name}}</strong>
+  <i>
+    {% if project.role %}
+    - {{project.role}}
+    {% endif %}
+    {% if project.team_size %}
+    - Team size: {{project.team_size | trim}}
+    {% endif %}
+  </i>
+  </p>
+  <p>{{ project.description }}</p>
+  <ul class="bullets">
+    {% for bullet in project.description_bullets %}
+    <li><span>{{bullet | trim}}</span></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>
+{% endfor %}

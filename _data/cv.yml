@@ -1,0 +1,80 @@
+personal_info:
+  name: Vo Van Sang
+  profession: Software Engineer
+  summary: |
+    I'm web developer with 2+ years of experience. Learning new languages and technologies is what I am passionate about.
+  mail: sangvo111@gmail.com
+  phone: (+84) 979 340 304
+  address:
+    title: Da Nang, VN
+    url: https://www.google.com/maps/@16.0471659,108.1716865,13z
+  personal_site:
+    title: blog.sangv2.com
+    url: https://blog.sangv2.com/
+  github:
+    title: github.com/sangvo
+    url: https://github.com/sangvo
+  linkedin:
+    title: linkedin.com/in/sangvo97
+    url: https://www.linkedin.com/in/sangvo97
+
+experiences:
+  - company: Sun* Inc.
+    role: Software Engineer
+    date: 12/2020 - Now
+    location: Da Nang, VN
+    organization:
+    description:
+    projects:
+      - name: Kaizen Sales Platform
+        description: Accelerate sales DX with video and data.
+        role: Ruby Developer
+        team_size: 2
+        description_bullets:
+        - Write Api and Unit Test for front end using Ruby On Rails API.
+        - Upload video content to Vimeo using Vimeo API.
+      - name: StartupGate.net
+        url:
+        description: A Platform connect Investor and Startup in VietNam. Powered by Sun Inc.
+        role: Ruby Developer
+        team_size: 5
+        description_bullets:
+        - Full-stack web development using MVC Ruby on Rails, HTML5/CSS3, Javascript.
+        - Worked in a team-based development environment using agile methodologies like Scrum.
+  - company: Sun* Inc.
+    role: Internship Ruby
+    date: 09/2019 - 12/2019
+    location: Da Nang, VN
+    description_bullets:
+    - Training Ruby.
+    - Built first internal project using Ruby On Rails.
+
+skills:
+  - title: Program languages
+    description_bullets:
+    - Ruby, Javascript
+    - HTML5, CSS3
+  - title: Frameworks, Platforms
+    description_bullets:
+    - Ruby on Rails, Nodejs
+    - Vuejs, ES6
+    - Jquery, Bootstrap
+  - title: Database Management Systems
+    description_bullets:
+    - Mysql
+    - PostgreSQL
+  - title: Development Tools
+    description_bullets:
+    - Linux
+    - N(eo)Vim
+    - VsCode
+  - title: Version controls
+    description_bullets:
+    - GIT
+
+activities:
+  - "I am keen on reading books, IT blogs, Medium in my free time.  I also work on some pet projects.
+    They can be found at my GitHub profile <a href='https://github.com/sangvo'>https://github.com/sangvo</a>
+    and My CV online in <a href='https://blog.sangv2.com/cv' targe='_blank'>https://blog.sangv2.com/cv</a>"
+  - "I am created a blog called: <a href='https://blog.sangv2.com' targe='_blank'>https://blog.sangv2.com</a>,
+    where i share my working experience and knowledge to other developers."

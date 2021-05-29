@@ -1,0 +1,16 @@
+<section class="skills">
+  <div class="row">
+  {% for skill in include.skills %}
+    <div class="col-sm-12 col-md-6 skill-item">
+      <b>{{skill.title}}</b>
+      {% if skill.description_bullets.size > 0 %}
+      <ul class="bullets">
+        {% for bullet in skill.description_bullets %}
+        <li><span>{{bullet | trim}}</span></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+</section>

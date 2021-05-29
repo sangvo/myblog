@@ -1,0 +1,77 @@
+<script>
+  (function() {
+    // If the height/width ratio is bigger than or equal to A4 height/width ratio,
+    // it should be portrait.
+    var shouldBePortrait = document.body.offsetHeight / document.body.offsetWidth >= 297 / 210;
+
+    var setPageSize = function(size) {
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      style.id = 'print-style';
+      style.media = 'print';
+      // If the style already exists, remove it.
+      var existingEl = document.getElementById(style.id);
+      if (existingEl) {
+        existingEl.parentNode.removeChild(existingEl);
+      }
+      var css = '@media print {' +
+                  '@page {' +
+                    'size: ' + size + ';' +
+                  '}' +
+                '}';
+      style.appendChild(document.createTextNode(css));
+      document.head.appendChild(style);
+    }
+
+    var prepareSinglePagePrint = function() {
+      var div = document.createElement('div');
+      div.id = 'dummy-div';
+      div.style.width = '1cm';
+      document.body.appendChild(div);
+      while (!document.getElementById(div.id)) true; // wait until the element is rendered
+      var pixelCmRatio = div.offsetWidth; // get the pixel / cm ratio
+      div.parentNode.removeChild(div); // remove the dummy element from DOM
+
+      var pageWidth, pageHeight;
+      if (shouldBePortrait) {
+        pageHeight = document.body.offsetHeight / pixelCmRatio + 0.1;
+        pageWidth = pageHeight * 210 / 297;
+      } else {
+        pageWidth = document.body.offsetWidth / pixelCmRatio + 0.1;
+        pageHeight = pageWidth * 210 / 297;
+      }
+      setPageSize(pageWidth + 'cm ' + pageHeight + 'cm');
+    };
+
+    var prepareA4Print = function() {
+      if (shouldBePortrait) {
+        setPageSize('A4 portrait');
+      } else {
+        setPageSize('A4 landscape');
+      }
+    };
+
+    var preparePrint = function() {
+      var isSinglePage = confirm('Fit on a single page?');
+      if (isSinglePage) {
+        prepareSinglePagePrint();
+      } else {
+        prepareA4Print();
+      }
+    };
+
+    window.onload = prepareSinglePagePrint;
+
+    // Prepare the page for printing before the print dialog.
+    document.addEventListener('keydown', function (e) {
+      e = e || window.event;
+      var isMac = window.navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      if (e.keyCode === 80 && (isMac ? e.metaKey : e.ctrlKey)) {
+        // Cmd+P (on Mac) or Ctrl+P (on non-Mac) is pressed.
+        e.preventDefault(); // cancel the default print event
+        preparePrint();
+        window.print();
+      }
+    }, true);
+  }());
+</script>

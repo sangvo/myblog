@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="CV / Resume of {{ site.data.cv.personal_info.name }}.">
+<meta name="robots" content="index,follow,noodp">
+<meta name="googlebot" content="index,follow">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<meta name="theme-color" content="#FFFFFF">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="My CV">
+
+<link rel="icon" href="/favicon.ico" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="mask-icon" href="/favicon.ico" color="white">
+
+<link rel="stylesheet" href="/assets/css/build.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/print.css" type="text/css" media="print">
+
+{% assign assignColor = "initial" %}
+
+<style>
+  body,
+	main section p {
+		color: {{site.data.color_palette.bodyText | default: assignColor}};
+	}
+
+	h1,
+	header .name {
+		color: {{site.data.color_palette.headings | default: assignColor}};
+	}
+
+	h2,
+	header .profession {
+		color: {{site.data.color_palette.subheadings | default: assignColor}};
+	}
+
+	.section-header {
+	  border-bottom-color: {{site.data.color_palette.headings | default: assignColor}};
+	}
+
+	.fa {
+		color: {{color_palette.icons | default: assignColor}};
+	}
+
+	body {
+		background: {{color_palette.bodyBgImg | default: assignColor}};
+	}
+</style>

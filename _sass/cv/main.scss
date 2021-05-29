@@ -1,0 +1,37 @@
+@import "normalize.css";
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "variables.scss";
+@import "base.scss";
+@import "header.scss";
+@import "section.scss";
+@import "mobile.scss";
+
+.pic {
+  max-height: 185px;
+}
+
+.bordered-pic {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}
+
+#first-half-page {
+  margin-left: -$bs-col-padding-side/2;
+  margin-right: $bs-col-padding-side/2;
+}
+
+#second-half-page {
+  margin-left: $bs-col-padding-side/2;
+  margin-right: -$bs-col-padding-side/2;
+}
+
+.pd-0 {
+  padding: 0;
+}
+
+.skill-item {
+  margin-top: 20px;
+}
