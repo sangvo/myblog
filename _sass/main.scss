@@ -412,6 +412,10 @@ blockquote span{
   display: inline-block;
 }
 
+iframe[src*="ads-iframe"] {
+  display: none
+}
+
 @media (max-width:767px) {
 	.header__inner {
 		flex-direction: column;
