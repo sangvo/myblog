@@ -1,10 +1,15 @@
 <!-- Google analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.analytics.google }}');
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', '{{ site.analytics.google }}', 'auto');
   ga('send', 'pageview');
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <!-- Facebook analytics -->
 <script>
