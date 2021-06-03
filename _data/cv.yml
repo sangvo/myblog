@@ -1,6 +1,6 @@
 personal_info:
   name: Vo Van Sang
-  profession: Software Engineer
+  profession: Ruby on Rails Developer
   summary: |
     I'm web developer with 2+ years of experience. Learning new languages and technologies is what I am passionate about.
   mail: sangvo111@gmail.com
@@ -20,16 +20,23 @@ personal_info:
 
 experiences:
   - company: Sun* Inc.
-    role: Software Engineer
+    role: Backend developer
     date: 12/2020 - Now
     location: Da Nang, VN
     organization:
     description:
     projects:
+      - name: St***Check System
+        description: System Testing Online for Company
+        role: Ruby Developer
+        team_size: 5 (Backend)
+        description_bullets:
+        - Write API and Unit Test for employees of companies take the test and evaluate the results.
+        - Using SendGrid to send mail and Aws S3 to storage
       - name: Kaizen Sales Platform
         description: Accelerate sales DX with video and data.
         role: Ruby Developer
-        team_size: 2
+        team_size: 3 (Backend)
         description_bullets:
         - Write Api and Unit Test for front end using Ruby On Rails API.
         - Upload video content to Vimeo using Vimeo API.
@@ -46,8 +53,8 @@ experiences:
     date: 09/2019 - 12/2019
     location: Da Nang, VN
     description_bullets:
-    - Training about Ruby On Rails.
-    - Built first internal project using Ruby On Rails.
+    - Training about Ruby on Rails.
+    - Built first internal project using Ruby on Rails.
 
 skills:
   - title: Program languages
@@ -56,7 +63,7 @@ skills:
     - HTML5, CSS3
   - title: Frameworks, Platforms
     description_bullets:
-    - Ruby on Rails, Nodejs
+    - Ruby on Rails (Rspec), Nodejs
     - Vuejs, ES6
     - Jquery, Bootstrap
   - title: Database Management Systems
@@ -73,8 +80,8 @@ skills:
     - GIT
 
 activities:
-  - "I am keen on reading books, IT blogs, Medium in my free time.  I also work on some pet projects.
-    They can be found at my GitHub profile <a href='https://github.com/sangvo'>https://github.com/sangvo</a>
-    and My CV online in <a href='https://blog.sangv2.com/cv' targe='_blank'>https://blog.sangv2.com/cv</a>"
-  - "I am created a blog called: <a href='https://blog.sangv2.com' targe='_blank'>https://blog.sangv2.com</a>,
+  - "I am keen on reading books, IT blogs, Viblo, Kipalog and Medium in my free time. I also work on some pet projects.
+    They can be found at my GitHub profile <a href='https://github.com/sangvo' target='_blank'>https://github.com/sangvo</a>
+    and My CV online in <a href='https://blog.sangv2.com/cv/' target='_blank'>https://blog.sangv2.com/cv/</a>"
+  - "I am created a blog called: <a href='https://blog.sangv2.com' target='_blank'>https://blog.sangv2.com</a>,
     where i share my working experience and knowledge to other developers."
