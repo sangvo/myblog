@@ -221,7 +221,7 @@ main img, main p, main figure, main ul {
 
 body {
 	color: #27272a;
-	font-family: "IBM Plex Sans ExtraLight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 	line-height: 1.6;
 	padding: 24px 24px 40px;
 }
@@ -298,6 +298,11 @@ h2 {
 	h1 {
 		margin-bottom: 16px;
 	}
+}
+
+.emoji {
+    display: inline-block !important;
+    margin-top: 0 !important;
 }
 main {
 	img {
