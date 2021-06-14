@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Query Object trong Rails: Search không hề khó"
-description:
-image:
-category:
+title: 'Query Object trong Rails: search thật đơn giản!'
+description: |
+  Áp dụng design pattern Query Object để search/filter nâng cao trong ruby on rails, giúp code clear và dễ maintain
+  hơn.
+category: 
+image: 
 tags: rails rails-design-patterns
 toc: true
+date: 2021-06-15 00:08 +0700
 ---
-
 ## Mở đầu
 Chuyện về search/filter trong các ứng dụng cực kì phổ biến đặc biết trong các trang thương mại điện tử hay ở admin
 panel... đối với những form chỉ đơn giản một vài text box thì viết sao cũng được, nhưng khi form search có cả chục field
