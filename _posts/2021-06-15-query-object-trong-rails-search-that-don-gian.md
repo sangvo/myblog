@@ -4,10 +4,13 @@ title: 'Query Object trong Rails: search thật đơn giản!'
 description: |
   Áp dụng design pattern Query Object để search/filter nâng cao trong ruby on rails, giúp code clear và dễ maintain
   hơn.
-category: 
-image: 
+category:
+image:
 tags: rails rails-design-patterns
 toc: true
+sitemap: true
+comments: true
+published: true
 date: 2021-06-15 00:08 +0700
 ---
 ## Mở đầu
@@ -220,7 +223,7 @@ Như vậy mình đã hướng dẫn sử dụng **Query Object** refactor form 
 các form **search nâng cao**.
 
 - Link source code example: [https://github.com/sangvo/rails_design_pattern/](
-https://github.com/sangvo/rails_design_pattern/)
+https://github.com/sangvo/rails_design_pattern/){:target="_blank"}
 
 - References:
-[https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries)
+[https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries){:target="_blank"}
