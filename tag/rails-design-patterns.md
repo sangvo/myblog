@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Tag: rails-design-patterns"
-desciption:
+description:
 tag: rails-design-patterns
 ---
