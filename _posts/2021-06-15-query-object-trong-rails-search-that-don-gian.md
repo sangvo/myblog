@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "Query Object trong Rails: Search không hề khó"
-description:
-image:
+title: 'Query Object trong Rails: search thật đơn giản!'
+description: |
+  Áp dụng design pattern Query Object để search/filter nâng cao trong ruby on rails, giúp code clear và dễ maintain
+  hơn.
 category:
+image:
 tags: rails rails-design-patterns
 toc: true
+sitemap: true
+comments: true
+published: true
+date: 2021-06-15 00:08 +0700
 ---
-
 ## Mở đầu
 Chuyện về search/filter trong các ứng dụng cực kì phổ biến đặc biết trong các trang thương mại điện tử hay ở admin
 panel... đối với những form chỉ đơn giản một vài text box thì viết sao cũng được, nhưng khi form search có cả chục field
@@ -31,7 +36,7 @@ Giả sử chúng ta sẽ làm một form search sản phẩm:
 
 Ta có controller Product như sau:
 ```ruby
-class ProductController < ApplicationController
+class ProductsController < ApplicationController
   def index
     price_sort_direction = params[:price_sort_direction].to_sym || :desc
     @products = Product.order(price: price_sort_direction).page(params[:page]).per(params[:per_page])
@@ -76,7 +81,7 @@ dù chúng ta tách hàm xử lý ở dưới hay model thì nó vẫn khá ph�
 ## Refactoring với Query Object
 
 ```ruby
-class ProductController < ApplicationController
+class ProductsController < ApplicationController
   def index
     @products = SearchProducts.new(products: Product.all).call(search_params)
     render json: {products: @products}
@@ -97,7 +102,6 @@ Tạo file `search_products.rb`
 touch app/queries/search_products.rb
 ```
 ```ruby
-# app/queries/search_products.rb
 class SearchProducts
   attr_accessor :products
 
@@ -106,10 +110,10 @@ class SearchProducts
   end
 
   def call(search_params)
-    scoped = search(initial_scope, search_params[:q])
-    scoped = filter_by_price(scoped, search_params[:from_price], search_params[:price_to])
+    scoped = search(products, search_params[:q])
+    scoped = filter_by_price(scoped, search_params[:price_from], search_params[:price_to])
     scoped = filter_by_category(scoped, search_params[:category_id])
-    scoped = sort(scoped, params[:sort_field], search_params[:sort_direction])
+    scoped = sort(scoped, search_params[:sort_field], search_params[:sort_direction])
     scoped = paginate(scoped, search_params[:page], search_params[:per_page])
     scoped
   end
@@ -129,29 +133,65 @@ class SearchProducts
     category_id ? scoped.where(category_id: category_id) : scoped
   end
 
-  def sort allowed_fields = %w(price created_at), default = {order: :price, sort: :desc}
-    order_by_field = allowed_fields.include?(params[:sort_field]) ? params[:sort_field] : default[:order]
-    order_direction = %w(asc desc).include?(params[:sort_direction]) ? params[:sort_direction] : default[:sort]
+  def sort scoped, sort_field, sort_direction, default = {order: :price, sort: :desc}
+    allowed_fields = %w(price created_at)
+    order_by_field = allowed_fields.include?(sort_field) ? sort_field : default[:order]
+    order_direction = %w(asc desc).include?(sort_direction) ? sort_direction : default[:sort]
 
-    {order_by_field => order_direction}
+    scoped.order({order_by_field => order_direction})
   end
 
   def paginate scoped, page, per_page
-    scope.page(params[:page]).per(params[:per_page])
+    scoped.page(page).per(per_page) # kaminari
   end
 end
+```
+Thêm routes và test thôi :D
+```
+http://localhost:3000/products?q=&price_from=10000
+```
+Kết quả:
+```json
+{
+  products: [
+    {
+      id: 3,
+      title: "T-Shirt 2",
+      price: "40000.0",
+      category_id: 1,
+      created_at: "2021-06-14T15:42:14.169Z",
+      updated_at: "2021-06-14T15:42:14.169Z"
+    },
+    {
+      id: 2,
+      title: "T-Shirt 2",
+      price: "20000.0",
+      category_id: 1,
+      created_at: "2021-06-14T15:42:04.500Z",
+      updated_at: "2021-06-14T15:42:04.500Z"
+    },
+    {
+      id: 1,
+      title: "T-Shirt",
+      price: "10000.0",
+      category_id: 1,
+      created_at: "2021-06-14T15:28:00.136Z",
+      updated_at: "2021-06-14T15:28:00.136Z"
+    }
+  ]
+}
 ```
 
 ## Viết Unit Test
 Example:
 ```ruby
 RSpec.describe SearchProducts do
-  let(:product_1) { create :product, price: 10 }
-  let(:product_2) { create :product, price: 20 }
-  let(:product_3) { create :product, price: 30 }
+  let!(:product_1) { create :product, price: 10 }
+  let!(:product_2) { create :product, price: 20 }
+  let!(:product_3) { create :product, price: 30 }
   let(:products) { Product.all }
 
-  subject { described_class.new(products).call(search_params) }
+  subject { described_class.new(products: products).call(search_params) }
 
   context "with empty params" do
     let(:search_params) { {} }
@@ -161,8 +201,7 @@ RSpec.describe SearchProducts do
       expect(subject.ids).to eq [product_3.id, product_2.id, product_1.id]
     end
 
-    it "paginates" do
-      expect(subject.total_pages).to eq 1
+    it "paginates" do expect(subject.total_pages).to eq 1
       expect(subject.total_count).to eq 3
       expect(subject.current_page).to eq 1
     end
@@ -183,8 +222,8 @@ end
 Như vậy mình đã hướng dẫn sử dụng **Query Object** refactor form search xong rồi ^^, hi vọng giúp ích cho các bạn khi gặp
 các form **search nâng cao**.
 
-- Link source code example: [https://github.com/sangvo/rails_design_pattern](
-https://github.com/sangvo/rails_design_pattern)
+- Link source code example: [https://github.com/sangvo/rails_design_pattern/](
+https://github.com/sangvo/rails_design_pattern/){:target="_blank"}
 
 - References:
-[https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries)
+[https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries](https://mkdev.me/en/posts/how-to-use-query-objects-to-refactor-rails-sql-queries){:target="_blank"}
