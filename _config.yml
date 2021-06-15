@@ -85,6 +85,10 @@ jekyll_compose:
       image:
       category:
       tags:
+      published: false
+      sitemap: false
+      comments: false
+      toc: true
     posts:
       description:
       image:

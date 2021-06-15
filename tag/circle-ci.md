@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Tag: circle-ci"
-desciption:
+description:
 tag: circle-ci
 ---

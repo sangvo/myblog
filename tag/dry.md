@@ -1,6 +1,6 @@
 ---
 layout: tag
 title: "Tag: dry"
-desciption:
+description:
 tag: dry
 ---

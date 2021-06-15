@@ -29,6 +29,16 @@ Let's check out [Wikipedia][1] and [Google][2].
 [^2]: copy content
 
 
-# Test content
+## Test content
 
+<kbd>Enter</kbd>
 Hello
+
+~~~ python
+# a comment
+import datetime
+
+def get_or_create_user(session, model, **kwargs):
+    instance = session.query(model).filter_by(twitter_user_id=kwargs["twitter_user_id"]).first()
+	return instance
+~~~
