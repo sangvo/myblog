@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hướng dẫn xây dựng template để start project rails siêu nhanh
-date: 2021-05-18 19:35 +0700
+date: 2021-05-17 19:35 +0700
 description:
 image: /assets/images/rails-generator-template-ok.png
 category:
