@@ -40,7 +40,7 @@ old_tags.each do |tag|
   FileUtils.rm(tag)
 end
 
-FileUtils.mkdir_p('tag_dir')
+FileUtils.mkdir_p('tag') unless Dir.exist?('tag')
 
 total_tags.each do |tag|
   tag_filename = tag_dir + tag + '.md'
