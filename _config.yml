@@ -45,7 +45,7 @@ analytics:
 
 # Disqus Comments
 disqus:
-  shortname: sangv2
+  shortname: sangvogit
 # Build settings
 plugins:
   - jekyll-feed
