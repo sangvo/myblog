@@ -2,12 +2,13 @@
 layout: post
 title: 'Presenter pattern rails: Quản lý view tuyệt vời'
 date: 2021-09-03 20:42 +0700
-description: 
+description: |
+  Presenter pattern giúp chúng ta quản lý data ở view thật sử tuyệt vời và dễ maintain hơn
 image: 
 category: 
-tags: 
+tags: rails rails-design-patterns
 published: true
-sitemap: false
+sitemap: true
 comments: true
 toc: true
 series: "Rails design pattern"
