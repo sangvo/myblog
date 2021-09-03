@@ -12,6 +12,7 @@ sitemap: true
 comments: true
 published: true
 date: 2021-06-15 10:08 +0700
+series: "Rails design pattern"
 ---
 ## Mở đầu
 Chuyện về search/filter trong các ứng dụng cực kì phổ biến đặc biết trong các trang thương mại điện tử hay ở admin
