@@ -43,9 +43,12 @@ analytics:
   google: G-ER0CVYRKLM
   facebook: 1412113735801560
 
-# Disqus Comments
-disqus:
-  shortname: sangvogit
+# facebook comments
+facebook:
+  num_posts: 10
+  lazy: true
+  app_id: 1412113735801560
+
 # Build settings
 plugins:
   - jekyll-feed
