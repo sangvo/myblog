@@ -366,7 +366,6 @@
 404	_pages/404.html	/^  <h1>404<\/h1>$/;"	h
 404	_site/404.html	/^  <h1>404<\/h1>$/;"	h
 About Me	_site/about/index.html	/^    <h1 itemprop="name headline">About Me<\/h1>$/;"	h
-Actions by github	_drafts/github-action-ci-ruby.md	/^## Actions by github$/;"	s	chapter:Github actions CI cho Ruby on rails
 Actions by github	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Actions by github$/;"	s
 Articles	_pages/articles.html	/^      <h1>Articles<\/h1>$/;"	h
 Articles	_site/articles/index.html	/^      <h1>Articles<\/h1>$/;"	h
@@ -377,15 +376,12 @@ Cách sử dụng Template	_posts/2021-05-17-starter-template-new-project-ruby-o
 Cách để tìm những orphan record trong rails	_site/page2/index.html	/^<\/h2>$/;"	i
 Cách để tìm những orphan record trong rails	_site/posts/cach-de-tim-nhung-orphan-record-trong-rails.html	/^    <h1 itemprop="name headline">Cách để tìm những orphan record trong rails<\/h1>$/;"	h
 Cách để tìm những orphan record trong rails	_site/tag/rails.html	/^      <a href="\/posts\/cach-de-tim-nhung-orphan-record-trong-rails.html" class="black-link">Cá/;"	i
-Defining a Job	_drafts/github-action-ci-ruby.md	/^## Defining a Job$/;"	s	chapter:Github actions CI cho Ruby on rails
 Defining a Job	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Defining a Job$/;"	s
-Defining a Workflow	_drafts/github-action-ci-ruby.md	/^## Defining a Workflow$/;"	s	chapter:Github actions CI cho Ruby on rails
 Defining a Workflow	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Defining a Workflow$/;"	s
 Friends	_site/friends/index.html	/^    <h1 itemprop="name headline">Friends<\/h1>$/;"	h
 Generate unsubscribe token	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Generate unsubscribe token$/;"	s
 Github Action Ci Ruby	_site/page2/index.html	/^<\/h2>$/;"	i
 Github Action Ci Ruby	_site/posts/github-action-ci-ruby.html	/^    <h1 itemprop="name headline">Github Action Ci Ruby<\/h1>$/;"	h
-Github actions CI cho Ruby on rails	_drafts/github-action-ci-ruby.md	/^# Github actions CI cho Ruby on rails$/;"	c
 Github actions CI cho Ruby on rails	_site/page2/index.html	/^<\/h2>$/;"	i
 Github actions CI cho Ruby on rails	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^    <h1 itemprop="name headline">Github actions CI cho Ruby on rails<\/h1>$/;"	h
 Github actions CI cho Ruby on rails	_site/tag/ci.html	/^      <a href="\/posts\/github-actions-ci-cho-ruby-on-rails.html" class="black-link">Github acti/;"	i
@@ -439,7 +435,6 @@ Monkey Patching: Từ mềm dẻo đến con dao hai lưỡi	_site/tag/rails.htm
 Monkey Patching: Từ mềm dẻo đến con dao hai lưỡi	_site/tag/ruby.html	/^      <a href="\/posts\/monkey-patching-con-dao-hai-luoi.html" class="black-link">Monkey Patchin/;"	i
 Mở đầu	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Mở đầu$/;"	s
 Mở đầu	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^## Mở đầu$/;"	s
-Mục đích	_drafts/github-action-ci-ruby.md	/^## Mục đích$/;"	s	chapter:Github actions CI cho Ruby on rails
 Mục đích	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Mục đích$/;"	s
 Nghề BrSE - Tâm sự nghề BrSE	_pages/friends.md	/^## Nghề BrSE - Tâm sự nghề BrSE$/;"	s
 Nên tổ chức monkey patching như nào?	_posts/2021-08-25-monkey-patching-con-dao-hai-luoi.md	/^## Nên tổ chức monkey patching như nào?$/;"	s
@@ -464,7 +459,6 @@ Ruby on Rails - Application Template là gì?	_posts/2021-05-17-starter-template
 Ruby on Rails Developer	_site/cv/index.html	/^      <h2 class="profession">Ruby on Rails Developer<\/h2>$/;"	i
 Ruby on rails and CI/CD	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^  <h3>Ruby on rails and CI\/CD<\/h3>$/;"	j
 Ruby on rails and CI/CD	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.html	/^  <h3>Ruby on rails and CI\/CD<\/h3>$/;"	j
-Services	_drafts/github-action-ci-ruby.md	/^## Services$/;"	s	chapter:Github actions CI cho Ruby on rails
 Services	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Services$/;"	s
 TECHNICAL SKILLS	_site/cv/index.html	/^          <h1 class="section-header">TECHNICAL SKILLS<\/h1>$/;"	h
 Test content	_drafts/my-note-jeykyll.md	/^## Test content$/;"	s
@@ -480,7 +474,6 @@ Tích hợp CircleCI với github cho ứng dụng Ruby on Rails	_site/tag/rails
 Tại sao cần chúng?	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^### Tại sao cần chúng?$/;"	S	section:Mở đầu
 Tại sao cần chúng?	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h3>$/;"	j
 Tạo controller để xử lý unsubscribe	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Tạo controller để xử lý unsubscribe$/;"	s
-Tổng kết	_drafts/github-action-ci-ruby.md	/^## Tổng kết$/;"	s	chapter:Github actions CI cho Ruby on rails
 Tổng kết	_posts/2021-05-17-starter-template-new-project-ruby-on-rails.md	/^## Tổng kết$/;"	s
 Tổng kết	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^## Tổng kết$/;"	s
 Tổng kết	_posts/2021-09-03-presenter-pattern-rails-quan-ly-view-tuyet-voi.md	/^## Tổng kết$/;"	s
