@@ -9,20 +9,25 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/6544786c/
+# Actions by github	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
 # Actions by github	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # CI là gì?	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Cài đặt CircleCI	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Cách sử dụng	_site/posts/presenter-pattern-rails-quan-ly-view-tuyet-voi.html	/^      <\/h2>$/;"	i
 # Cách sử dụng Template	_site/posts/starter-template-new-project-ruby-on-rails.html	/^      <\/h2>$/;"	i
+# Defining a Job	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
 # Defining a Job	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
+# Defining a Workflow	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
 # Defining a Workflow	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Generate unsubscribe token	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <\/h2>$/;"	i
+# Github actions CI cho Ruby on rails	_site/posts/github-action-ci-ruby.html	/^      <\/h1>$/;"	h
 # Khi user nhấn vào liên kết sẽ vào view unsubscribe	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <\/h2>$/;"	i
 # Kiyo Chinh Blog’s - Mobile developer	_site/friends/index.html	/^      <\/h2>$/;"	i
 # Luat Hoang	_site/friends/index.html	/^      <\/h2>$/;"	i
 # Monkey Patching là gì?	_site/posts/monkey-patching-con-dao-hai-luoi.html	/^      <\/h2>$/;"	i
 # Mở đầu	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <\/h2>$/;"	i
 # Mở đầu	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h2>$/;"	i
+# Mục đích	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
 # Mục đích	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Nghề BrSE - Tâm sự nghề BrSE	_site/friends/index.html	/^      <\/h2>$/;"	i
 # Nên tổ chức monkey patching như nào?	_site/posts/monkey-patching-con-dao-hai-luoi.html	/^      <\/h2>$/;"	i
@@ -30,11 +35,14 @@
 # Quá trình run 1 job trên CircleCI	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Refactoring với Query Object	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h2>$/;"	i
 # Ruby on Rails - Application Template là gì?	_site/posts/starter-template-new-project-ruby-on-rails.html	/^      <\/h2>$/;"	i
+# Services	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
 # Services	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Test content	_site/posts/my-note-jeykyll.html	/^      <\/h2>$/;"	i
 # Tham khảo	_site/posts/monkey-patching-con-dao-hai-luoi.html	/^      <\/h2>$/;"	i
 # Thực hành	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h2>$/;"	i
 # Tạo controller để xử lý unsubscribe	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <\/h2>$/;"	i
+# Tổng kết	_site/posts/github-action-ci-ruby.html	/^      <\/h2>$/;"	i
+# Tổng kết	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <\/h2>$/;"	i
 # Tổng kết	_site/posts/presenter-pattern-rails-quan-ly-view-tuyet-voi.html	/^      <\/h2>$/;"	i
 # Tổng kết	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h2>$/;"	i
 # Tổng kết	_site/posts/starter-template-new-project-ruby-on-rails.html	/^      <\/h2>$/;"	i
@@ -358,6 +366,7 @@
 404	_pages/404.html	/^  <h1>404<\/h1>$/;"	h
 404	_site/404.html	/^  <h1>404<\/h1>$/;"	h
 About Me	_site/about/index.html	/^    <h1 itemprop="name headline">About Me<\/h1>$/;"	h
+Actions by github	_drafts/github-action-ci-ruby.md	/^## Actions by github$/;"	s	chapter:Github actions CI cho Ruby on rails
 Actions by github	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Actions by github$/;"	s
 Articles	_pages/articles.html	/^      <h1>Articles<\/h1>$/;"	h
 Articles	_site/articles/index.html	/^      <h1>Articles<\/h1>$/;"	h
@@ -368,10 +377,15 @@ Cách sử dụng Template	_posts/2021-05-17-starter-template-new-project-ruby-o
 Cách để tìm những orphan record trong rails	_site/page2/index.html	/^<\/h2>$/;"	i
 Cách để tìm những orphan record trong rails	_site/posts/cach-de-tim-nhung-orphan-record-trong-rails.html	/^    <h1 itemprop="name headline">Cách để tìm những orphan record trong rails<\/h1>$/;"	h
 Cách để tìm những orphan record trong rails	_site/tag/rails.html	/^      <a href="\/posts\/cach-de-tim-nhung-orphan-record-trong-rails.html" class="black-link">Cá/;"	i
+Defining a Job	_drafts/github-action-ci-ruby.md	/^## Defining a Job$/;"	s	chapter:Github actions CI cho Ruby on rails
 Defining a Job	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Defining a Job$/;"	s
+Defining a Workflow	_drafts/github-action-ci-ruby.md	/^## Defining a Workflow$/;"	s	chapter:Github actions CI cho Ruby on rails
 Defining a Workflow	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Defining a Workflow$/;"	s
 Friends	_site/friends/index.html	/^    <h1 itemprop="name headline">Friends<\/h1>$/;"	h
 Generate unsubscribe token	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Generate unsubscribe token$/;"	s
+Github Action Ci Ruby	_site/page2/index.html	/^<\/h2>$/;"	i
+Github Action Ci Ruby	_site/posts/github-action-ci-ruby.html	/^    <h1 itemprop="name headline">Github Action Ci Ruby<\/h1>$/;"	h
+Github actions CI cho Ruby on rails	_drafts/github-action-ci-ruby.md	/^# Github actions CI cho Ruby on rails$/;"	c
 Github actions CI cho Ruby on rails	_site/page2/index.html	/^<\/h2>$/;"	i
 Github actions CI cho Ruby on rails	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^    <h1 itemprop="name headline">Github actions CI cho Ruby on rails<\/h1>$/;"	h
 Github actions CI cho Ruby on rails	_site/tag/ci.html	/^      <a href="\/posts\/github-actions-ci-cho-ruby-on-rails.html" class="black-link">Github acti/;"	i
@@ -396,6 +410,7 @@ Layer_1	_site/friends/index.html	/^            <!--?xml version="1.0" ?--><svg c
 Layer_1	_site/index.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
 Layer_1	_site/page2/index.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
 Layer_1	_site/posts/cach-de-tim-nhung-orphan-record-trong-rails.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
+Layer_1	_site/posts/github-action-ci-ruby.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
 Layer_1	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
 Layer_1	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
 Layer_1	_site/posts/monkey-patching-con-dao-hai-luoi.html	/^            <!--?xml version="1.0" ?--><svg contentscripttype="text\/ecmascript" contentstyletyp/;"	I
@@ -424,6 +439,7 @@ Monkey Patching: Từ mềm dẻo đến con dao hai lưỡi	_site/tag/rails.htm
 Monkey Patching: Từ mềm dẻo đến con dao hai lưỡi	_site/tag/ruby.html	/^      <a href="\/posts\/monkey-patching-con-dao-hai-luoi.html" class="black-link">Monkey Patchin/;"	i
 Mở đầu	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Mở đầu$/;"	s
 Mở đầu	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^## Mở đầu$/;"	s
+Mục đích	_drafts/github-action-ci-ruby.md	/^## Mục đích$/;"	s	chapter:Github actions CI cho Ruby on rails
 Mục đích	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Mục đích$/;"	s
 Nghề BrSE - Tâm sự nghề BrSE	_pages/friends.md	/^## Nghề BrSE - Tâm sự nghề BrSE$/;"	s
 Nên tổ chức monkey patching như nào?	_posts/2021-08-25-monkey-patching-con-dao-hai-luoi.md	/^## Nên tổ chức monkey patching như nào?$/;"	s
@@ -448,6 +464,7 @@ Ruby on Rails - Application Template là gì?	_posts/2021-05-17-starter-template
 Ruby on Rails Developer	_site/cv/index.html	/^      <h2 class="profession">Ruby on Rails Developer<\/h2>$/;"	i
 Ruby on rails and CI/CD	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^  <h3>Ruby on rails and CI\/CD<\/h3>$/;"	j
 Ruby on rails and CI/CD	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.html	/^  <h3>Ruby on rails and CI\/CD<\/h3>$/;"	j
+Services	_drafts/github-action-ci-ruby.md	/^## Services$/;"	s	chapter:Github actions CI cho Ruby on rails
 Services	_posts/2021-04-23-github-actions-ci-cho-ruby-on-rails.md	/^## Services$/;"	s
 TECHNICAL SKILLS	_site/cv/index.html	/^          <h1 class="section-header">TECHNICAL SKILLS<\/h1>$/;"	h
 Test content	_drafts/my-note-jeykyll.md	/^## Test content$/;"	s
@@ -463,12 +480,14 @@ Tích hợp CircleCI với github cho ứng dụng Ruby on Rails	_site/tag/rails
 Tại sao cần chúng?	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^### Tại sao cần chúng?$/;"	S	section:Mở đầu
 Tại sao cần chúng?	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <\/h3>$/;"	j
 Tạo controller để xử lý unsubscribe	_posts/2021-04-23-huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.md	/^## Tạo controller để xử lý unsubscribe$/;"	s
+Tổng kết	_drafts/github-action-ci-ruby.md	/^## Tổng kết$/;"	s	chapter:Github actions CI cho Ruby on rails
 Tổng kết	_posts/2021-05-17-starter-template-new-project-ruby-on-rails.md	/^## Tổng kết$/;"	s
 Tổng kết	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^## Tổng kết$/;"	s
 Tổng kết	_posts/2021-09-03-presenter-pattern-rails-quan-ly-view-tuyet-voi.md	/^## Tổng kết$/;"	s
 Viết Unit Test	_posts/2021-06-15-query-object-trong-rails-search-that-don-gian.md	/^## Viết Unit Test$/;"	s
 Vo Van Sang	_site/cv/index.html	/^      <h1 class="name">Vo Van Sang<\/h1>$/;"	h
 WORK EXPERIENCE	_site/cv/index.html	/^          <h1 class="section-header">WORK EXPERIENCE<\/h1>$/;"	h
+actions-by-github	_site/posts/github-action-ci-ruby.html	/^      <h2 id="actions-by-github">$/;"	I
 actions-by-github	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="actions-by-github">$/;"	I
 background_color	_site/manifest.json	/^  "background_color":"#ffffff",$/;"	s
 background_color	manifest.json	/^  "background_color":"#ffffff",$/;"	s
@@ -482,11 +501,12 @@ cài-đặt-circleci	_site/posts/tich-hop-circle-ci-cho-ung-dung-ruby-on-rails.h
 cách-sử-dụng	_site/posts/presenter-pattern-rails-quan-ly-view-tuyet-voi.html	/^      <h2 id="cách-sử-dụng">$/;"	I
 cách-sử-dụng-template	_site/posts/starter-template-new-project-ruby-on-rails.html	/^      <h2 id="cách-sử-dụng-template">$/;"	I
 dark-grey	_sass/cv/variables.scss	/^$dark-grey: #202731;$/;"	v
+defining-a-job	_site/posts/github-action-ci-ruby.html	/^      <h2 id="defining-a-job">$/;"	I
 defining-a-job	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="defining-a-job">$/;"	I
+defining-a-workflow	_site/posts/github-action-ci-ruby.html	/^      <h2 id="defining-a-workflow">$/;"	I
 defining-a-workflow	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="defining-a-workflow">$/;"	I
 display	_site/manifest.json	/^  "display":"standalone"$/;"	s
 display	manifest.json	/^  "display":"standalone"$/;"	s
-disqus_thread	_includes/disqus_comments.html	/^  <div id="disqus_thread"><\/div>$/;"	I
 dry	_site/tag/dry.html	/^  <h1 style="margin-bottom: 32px;">dry<\/h1>$/;"	h
 emTv0NGFN	_pages/about.html	/^    <svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\//;"	I
 emTv0NGFN	_site/about/index.html	/^    <svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\//;"	I
@@ -504,6 +524,7 @@ fontawesomeregular	_site/assets/fonts/fontawesome-webfont.svg	/^<svg xmlns="http
 fontawesomeregular	assets/fonts/fontawesome-webfont.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg"><metadata\/><defs><font id="fontawesomeregular" hori/;"	d
 fontawesomeregular	assets/fonts/fontawesome-webfont.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg"><metadata\/><defs><font id="fontawesomeregular" hori/;"	i
 generate-unsubscribe-token	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <h2 id="generate-unsubscribe-token">$/;"	I
+github-actions-ci-cho-ruby-on-rails	_site/posts/github-action-ci-ruby.html	/^    <h1 id="github-actions-ci-cho-ruby-on-rails">$/;"	I
 green	_sass/cv/variables.scss	/^$green: #33FF33;$/;"	v
 grey	_sass/cv/variables.scss	/^$grey: #3E445A;$/;"	v
 grey-alt	_sass/cv/variables.scss	/^$grey-alt: #8E8C8C;$/;"	v
@@ -530,6 +551,7 @@ monkey-patching	_site/tag/monkey-patching.html	/^  <h1 style="margin-bottom: 32p
 monkey-patching-là-gì	_site/posts/monkey-patching-con-dao-hai-luoi.html	/^      <h2 id="monkey-patching-là-gì">$/;"	I
 mở-đầu	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^    <h2 id="mở-đầu">$/;"	I
 mở-đầu	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^    <h2 id="mở-đầu">$/;"	I
+mục-đích	_site/posts/github-action-ci-ruby.html	/^      <h2 id="mục-đích">$/;"	I
 mục-đích	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="mục-đích">$/;"	I
 name	_site/manifest.json	/^  "name":"SangV2: RoR Developer",$/;"	s
 name	manifest.json	/^  "name":"SangV2: RoR Developer",$/;"	s
@@ -563,6 +585,7 @@ screen-xs	_sass/cv/variables.scss	/^$screen-xs: 480px;$/;"	v
 screen-xs-max	_sass/cv/variables.scss	/^$screen-xs-max: ($screen-sm-min - 1);$/;"	v
 second-half-page	_sass/cv/main.scss	/^#second-half-page {$/;"	i
 second-half-page	_sass/cv/mobile.scss	/^  #second-half-page {$/;"	i
+services	_site/posts/github-action-ci-ruby.html	/^      <h2 id="services">$/;"	I
 services	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="services">$/;"	I
 short_name	_site/manifest.json	/^  "short_name":"SangV2",$/;"	s
 short_name	manifest.json	/^  "short_name":"SangV2",$/;"	s
@@ -589,6 +612,8 @@ type	manifest.json	/^    "type":"image\/png"$/;"	s	object:icons.0
 type	manifest.json	/^  },{"src":"\/android-chrome-512x512.png","sizes":"512x512","type":"image\/png"}],$/;"	s	object:icons.1
 tại-sao-cần-chúng	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <h3 id="tại-sao-cần-chúng">$/;"	I
 tạo-controller-để-xử-lý-unsubscribe	_site/posts/huong-dan-viet-chuc-nang-unsubcribe-email-in-rail.html	/^      <h2 id="tạo-controller-để-xử-lý-unsubscribe">$/;"	I
+tổng-kết	_site/posts/github-action-ci-ruby.html	/^      <h2 id="tổng-kết">$/;"	I
+tổng-kết	_site/posts/github-actions-ci-cho-ruby-on-rails.html	/^      <h2 id="tổng-kết">$/;"	I
 tổng-kết	_site/posts/presenter-pattern-rails-quan-ly-view-tuyet-voi.html	/^      <h2 id="tổng-kết">$/;"	I
 tổng-kết	_site/posts/query-object-trong-rails-search-that-don-gian.html	/^      <h2 id="tổng-kết">$/;"	I
 tổng-kết	_site/posts/starter-template-new-project-ruby-on-rails.html	/^      <h2 id="tổng-kết">$/;"	I
